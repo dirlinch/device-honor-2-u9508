@@ -49,15 +49,10 @@ TARGET_KERNEL_CONFIG := cyanogenmod_hwu9508_defconfig
 # Recovery
 BOARD_HAS_NO_SELECT_BUTTON := true
 BOARD_HAS_LARGE_FILESYSTEM := true
-#TARGET_PREBUILT_RECOVERY_KERNEL := device/huawei/hwu9508/recovery/kernel
 TARGET_RECOVERY_INITRC := device/huawei/hwu9508/recovery/init.rc
 TARGET_RECOVERY_FSTAB := device/huawei/hwu9508/recovery/etc/recovery.fstab
-#BOARD_HAS_NO_MISC_PARTITION := true
-#BOARD_USES_MMCUTILS := true
-#TARGET_RECOVERY_PIXEL_FORMAT := RGBX_8888
 #BOARD_CUSTOM_RECOVERY_KEYMAPPING := device/huawei/hwu9508/recovery/recovery-keys.c
 DEVICE_RESOLUTION := 720x1280
-#TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/class/android_usb/android0/f_mass_storage/lun%d/file
 #BOARD_USE_CUSTOM_RECOVERY_FONT:= \"roboto_10x18.h\"
 BOARD_CUSTOM_GRAPHICS := device/huawei/hwu9508/recovery/graphics.c
 

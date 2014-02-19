@@ -79,34 +79,34 @@ PRODUCT_PACKAGES += \
 
 # HAL
 #PRODUCT_PACKAGES += \
-#	librs_jni \
-#    libhwconverter \
-#    libs5pjpeg \
-#    libfimg
+    librs_jni \
+    libhwconverter \
+    libs5pjpeg \
+    libfimg
 
 # Charger
 #PRODUCT_PACKAGES += \
-#    charger \
-#    charger_res_images
+    charger \
+    charger_res_images
 
 # MFC API
 #PRODUCT_PACKAGES += \
-#    libsecmfcapi
+    libsecmfcapi
 
 # OMX
 #PRODUCT_PACKAGES += \
-#   LiveWallpapers \
-#    LiveWallpapersPicker \
-#    VisualizationWallpapers \
-#    MagicSmokeWallpapers \
-#    VisualizationWallpapers \
-#    Gallery3d \
-#    SpareParts \
-#    Term \
-#    librs_jni \
-#    CMFileManager\
-#    libOmxCore \
-#    libOmxVdec 
+    LiveWallpapers \
+    LiveWallpapersPicker \
+    VisualizationWallpapers \
+    MagicSmokeWallpapers \
+    VisualizationWallpapers \
+    Gallery3d \
+    SpareParts \
+    Term \
+    librs_jni \
+    CMFileManager\
+    libOmxCore \
+    libOmxVdec 
 
 # mount points SDCARDS
 PRODUCT_COPY_FILES += \
@@ -119,15 +119,15 @@ PRODUCT_COPY_FILES += \
 
 # Audio
 #PRODUCT_COPY_FILES += \
-#	$(LOCAL_PATH)/configs/audio_policy.conf:system/etc/audio_policy.conf 
+	$(LOCAL_PATH)/configs/audio_policy.conf:system/etc/audio_policy.conf 
 
-# $(LOCAL_PATH)/configs/audio/front_audio_config.conf:system/etc/huawei/audio/front_audio_config.conf \
-# $(LOCAL_PATH)/configs/audio/front_factory_audio_config.conf:system/etc/huawei/audio/front_factory_audio_config.conf \
-# $(LOCAL_PATH)/configs/audio/u9508_audio_config.conf:system/etc/huawei/audio/u9508_audio_config.conf \
-# $(LOCAL_PATH)/configs/audio/u9508_factory_audio_config.conf:system/etc/huawei/audio/u9508_factory_audio_config.conf \
-# $(LOCAL_PATH)/configs/audio/viva_audio_config.conf:system/etc/huawei/audio/viva_audio_config.conf \
-# $(LOCAL_PATH)/configs/audio/viva_factory_audio_config.conf:system/etc/huawei/audio/viva_factory_audio_config.conf
-#   \
+$(LOCAL_PATH)/configs/audio/front_audio_config.conf:system/etc/huawei/audio/front_audio_config.conf \
+$(LOCAL_PATH)/configs/audio/front_factory_audio_config.conf:system/etc/huawei/audio/front_factory_audio_config.conf \
+$(LOCAL_PATH)/configs/audio/u9508_audio_config.conf:system/etc/huawei/audio/u9508_audio_config.conf \
+$(LOCAL_PATH)/configs/audio/u9508_factory_audio_config.conf:system/etc/huawei/audio/u9508_factory_audio_config.conf \
+$(LOCAL_PATH)/configs/audio/viva_audio_config.conf:system/etc/huawei/audio/viva_audio_config.conf \
+$(LOCAL_PATH)/configs/audio/viva_factory_audio_config.conf:system/etc/huawei/audio/viva_factory_audio_config.conf
+   \
 
 # Camera
 #PRODUCT_PACKAGES := \
@@ -152,7 +152,6 @@ PRODUCT_TAGS += dalvik.gc.type-precise
 
 # Filesystem management tools
 PRODUCT_PACKAGES += \
-	make_ext4fs \
 	e2fsck \
 	setup_fs
 

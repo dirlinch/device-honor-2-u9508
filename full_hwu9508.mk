@@ -159,6 +159,8 @@ PRODUCT_PACKAGES += \
 
 #$(call inherit-product, build/target/product/full.mk)
 
+include frameworks/native/build/phone-xhdpi-1024-dalvik-heap.mk
+
 $(call inherit-product-if-exists, vendor/huawei/hwu9508/hwu9508-vendor.mk
 
 

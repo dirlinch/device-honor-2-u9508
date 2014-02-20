@@ -30,7 +30,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 $(call inherit-product, device/common/gps/gps_us_supl.mk)
 
 # Inherit from vendor specs
-$(call inherit-product-if-exists, vendor/huawei/hwu9508/hwu9508-vendor.mk)
+#$(call inherit-product-if-exists, vendor/huawei/hwu9508/hwu9508-vendor.mk)
 
 LOCAL_PATH := device/huawei/hwu9508
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay

@@ -29,9 +29,6 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 # The gps config appropriate for this device
 $(call inherit-product, device/common/gps/gps_us_supl.mk)
 
-# Inherit from vendor specs
-#$(call inherit-product-if-exists, vendor/huawei/hwu9508/hwu9508-vendor.mk)
-
 LOCAL_PATH := device/huawei/hwu9508
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
@@ -155,12 +152,11 @@ PRODUCT_PACKAGES += \
 	e2fsck \
 	setup_fs
 
-#$(call inherit-product-if-exists, frameworks/native/build/phone-xhdpi-1024-dalvik-heap.mk)
-
 #$(call inherit-product, build/target/product/full.mk)
 
 include frameworks/native/build/phone-xhdpi-1024-dalvik-heap.mk
 
+# Proprietary side of the device
 $(call inherit-product-if-exists, vendor/huawei/hwu9508/hwu9508-vendor.mk
 
 

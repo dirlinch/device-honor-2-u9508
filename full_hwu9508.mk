@@ -65,7 +65,7 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/handheld_core_hardware.xml:system/etc/permissions/handheld_core_hardware.xml 
 
 # Include keyboards
-$(call inherit-product-if-exists, device/huawei/hwu9508/keyboards/keyboards.mk)
+include device/huawei/hwu9508/keyboards/keyboards.mk)
 
 # packages
 PRODUCT_PACKAGES += \
@@ -142,7 +142,7 @@ PRODUCT_COPY_FILES += \
 
 # Bluetooth 
 # Include initscripts
-$(call inherit-product-if-exists, device/huawei/hwu9508/initscripts/initscripts.mk)
+include device/huawei/hwu9508/initscripts/initscripts.mk)
 
 # we have enough storage space to hold precise GC data
 PRODUCT_TAGS += dalvik.gc.type-precise

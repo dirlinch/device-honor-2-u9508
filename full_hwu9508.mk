@@ -20,7 +20,7 @@
 #
 
 # Inherit from those products. Most specific first.
-$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
 
 # This is where we'd set a backup provider if we had one
 # Inherit from those products. Most specific first.
@@ -78,23 +78,23 @@ PRODUCT_PACKAGES += \
     Torch 
 
 # HAL
-#PRODUCT_PACKAGES += \
+PRODUCT_PACKAGES += \
     librs_jni \
     libhwconverter \
     libs5pjpeg \
     libfimg
 
 # Charger
-#PRODUCT_PACKAGES += \
+PRODUCT_PACKAGES += \
     charger \
     charger_res_images
 
 # MFC API
-#PRODUCT_PACKAGES += \
+PRODUCT_PACKAGES += \
     libsecmfcapi
 
 # OMX
-#PRODUCT_PACKAGES += \
+PRODUCT_PACKAGES += \
     LiveWallpapers \
     LiveWallpapersPicker \
     VisualizationWallpapers \
@@ -118,7 +118,7 @@ PRODUCT_COPY_FILES += \
 	 $(LOCAL_PATH)/configs/media_profiles.xml:system/etc/media_profiles.xml
 
 # Audio
-#PRODUCT_COPY_FILES += \
+PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/configs/audio_policy.conf:system/etc/audio_policy.conf 
 
 $(LOCAL_PATH)/configs/audio/front_audio_config.conf:system/etc/huawei/audio/front_audio_config.conf \
@@ -155,9 +155,11 @@ PRODUCT_PACKAGES += \
 	e2fsck \
 	setup_fs
 
-$(call inherit-product-if-exists, frameworks/native/build/phone-xhdpi-1024-dalvik-heap.mk)
+#$(call inherit-product-if-exists, frameworks/native/build/phone-xhdpi-1024-dalvik-heap.mk)
 
-$(call inherit-product, build/target/product/full.mk)
+#$(call inherit-product, build/target/product/full.mk)
+
+$(call inherit-product-if-exists, vendor/huawei/hwu9508/hwu9508-vendor.mk
 
 
 # Discard inherited values and use our own instead.

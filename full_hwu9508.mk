@@ -151,6 +151,9 @@ PRODUCT_TAGS += dalvik.gc.type-precise
 PRODUCT_PACKAGES += \
 	e2fsck \
 	setup_fs
+	
+# Bootanimation
+PRODUCT_BOOTANIMATION := vendor/cm/prebuilt/common/bootanimation/720.zip	
 
 #$(call inherit-product, build/target/product/full.mk)
 

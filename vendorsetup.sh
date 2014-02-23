@@ -21,3 +21,4 @@
 # function: add_lunch_combo generic-eng
 
 add_lunch_combo hwu9508-userdebug
+add_lunch_combo full_hwu9508-userdebug
